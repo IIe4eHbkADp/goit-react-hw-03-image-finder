@@ -1,13 +1,18 @@
-import { ProgressBar } from 'react-loader-spinner';
+import { ThreeCircles } from 'react-loader-spinner';
 
-export const Loader = () => (
-  <ProgressBar
-    height="100"
-    width="1200"
-    ariaLabel="progress-bar-loading"
-    wrapperStyle={{}}
-    wrapperClass="progress-bar-wrapper"
-    borderColor="#0c5acf"
-    barColor="#51E5FF"
-  />
-);
+export const Loader = () => {
+    return (
+        <ThreeCircles
+            height="200"
+            width="200"
+            color="#4fa94d"
+            wrapperStyle={{ justifyContent: 'center' }}
+            wrapperClass=""
+            visible={true}
+            ariaLabel="three-circles-rotating"
+            outerCircleColor="#0509fa"
+            innerCircleColor="#faf205"
+            middleCircleColor="#02f3f7"
+        />
+    );
+};
